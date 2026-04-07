@@ -35,8 +35,8 @@ class Transaction(Base, TimestampMixin):
         UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
     )
     amount: Mapped[float] = mapped_column(Numeric(15, 2), nullable=False)
-    type: Mapped[TypeEnum] = mapped_column(Enum(TypeEnum), nullable=False)
-    category: Mapped[CategoryEnum] = mapped_column(Enum(CategoryEnum), nullable=False)
+    type: Mapped[TypeEnum] = mapped_column(Enum(TypeEnum, name='typeofenum'), nullable=False)
+    category: Mapped[CategoryEnum] = mapped_column(Enum(CategoryEnum, name='categoryenum'), nullable=False)
     date: Mapped[date] = mapped_column(Date, index=True, nullable=False)
     description: Mapped[str | None] = mapped_column(Text, nullable=True)
     is_deleted: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
