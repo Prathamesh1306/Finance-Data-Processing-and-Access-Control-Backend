@@ -390,15 +390,6 @@ finance_backend/
 └── README.md             # This file
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and add tests
-4. Ensure all tests pass: `pytest`
-5. Commit your changes: `git commit -m 'Add amazing feature'`
-6. Push to the branch: `git push origin feature/amazing-feature`
-7. Open a Pull Request
 
 ### Development Guidelines
 
@@ -430,4 +421,4 @@ For support and questions:
 
 ---
 
-**Built with ❤️ using FastAPI, SQLAlchemy, and PostgreSQL**
+**Built with  using FastAPI, SQLAlchemy, and PostgreSQL**
